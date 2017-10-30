@@ -1,0 +1,256 @@
+.order {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.order__close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+.order__close::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 5px;
+  background: #fff;
+  transform: rotateZ(-45deg);
+  left:0;
+  top: 2px
+}
+
+.order__close::after {
+  left:0;
+  top: 2px;
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 5px;
+  background: #fff;
+  transform: rotateZ(45deg);
+}
+
+.order__title {
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
+.form__text {
+  font-size: 13px;
+  font-family: Ubuntu;
+  color: #fff;
+  line-height: 18px;
+  padding: 8px 0 8px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: none;
+  width: calc(100% - 8px);
+  margin: 3px 0;
+  transition: all 0.5 linear;
+}
+
+.form__text:focus, .form__text:hover {
+  border: 1px solid rgba(255,255,255,1);
+  transition: all 0.5 linear;
+}
+
+.form__text::-webkit-input-placeholder ,
+.form__text::-moz-placeholder ,
+.form__text:-ms-input-placeholder ,
+.form__text:-moz-placeholder {
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+.form__subtitle {
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+}
+
+.list, .sublist {
+    list-style-type: none;
+}
+
+.list {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.list label {
+  display: inline-block;
+  font-size: 13px;
+  font-family: Ubuntu;
+  line-height: 18px;
+}
+
+.list__item, .sublist__item {
+  margin: 6px 0;
+}
+
+.sublist{
+  padding-left: 0px;
+}
+
+.sublist__item {
+  padding-left: 25px;
+  position: relative;
+}
+
+.sublist__item::before{
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  opacity: 1;
+  background: #fff;
+  width: 10px;
+  height: 1px;
+  opacity: 0.1;
+}
+
+.sublist__item::after{
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: -18px;
+  opacity: 1;
+  background: #fff;
+  width: 1px;
+  height: 25px;
+  opacity: 0.1;
+}
+
+.sublist__item:first-child::after{
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: -12px;
+  opacity: 1;
+  background: #fff;
+  width: 1px;
+  height: 20px;
+  opacity: 0.1;
+}
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 25px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.checkbox:checked + label:before {
+  background: #fff;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+.form b {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+.number {
+  text-align: center;
+  margin: 10px 0;
+  height: 38px;
+  font-size: 0;
+}
+
+.number span {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 38px;
+  vertical-align: top;
+}
+.minus::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  height: 4px;
+  width: 15px;
+  background: rgba(255,255,255,0.5);
+}
+
+.plus::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  height: 15px;
+  width: 15px;
+  background: url("../img/plus.png") center center no-repeat;
+}
+
+.number__input{
+  vertical-align: top;
+  display: inline-block;
+  font-size: 21px;
+  height: 38px;
+  font-family: Ubuntu;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border: none;
+  padding: 0;
+}
+.btn--send {
+  display: block;
+  margin: 20px auto 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}

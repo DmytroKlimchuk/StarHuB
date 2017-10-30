@@ -1,0 +1,26 @@
+@import "partials/normalize";
+
+/*
+* Custom
+*/
+
+// building styles
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/scaffolding";
+@import "partials/styles";
+@import "partials/leftside";
+@import "partials/parthner";
+@import "partials/notice";
+@import "partials/media";
+@import "partials/order";
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+// building styles

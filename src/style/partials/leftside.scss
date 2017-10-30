@@ -1,0 +1,143 @@
+.header {
+    vertical-align: top;
+    line-height: 23px;
+    margin-right: 60px;
+}
+
+.header_logo {
+    display: inline-block;
+    margin-right: 35px;
+    vertical-align: top;
+}
+
+.header__img {
+    width: 149px;
+    height: 23px;
+}
+
+.header__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 9px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+.page {
+    color: #fff;
+    font-family: Ubuntu;
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        margin: 20px 0 ;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        margin-right: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}
+
+.btn {
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    padding: 13px 0;
+    border-radius: 3px;
+    background: #fff;
+    color: #764d9c;
+    font-family: Ubuntu;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    margin-right: 21px;
+}
+.btn--ligth {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn--ligth:hover {
+    opacity: 1;
+    border: 1px solid rgba(255,255,255, 1)
+
+}
+
+.footer {
+    line-height: 41px;
+}
+
+.social {
+    border-right: 1px solid #9667aa;
+    display: inline-block;
+    margin-right: 21px;
+}
+
+.social a {
+    display: inline-block;
+    margin-right: 20px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    opacity: 0.4;
+}
+.social a:hover {
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+.social__f {
+    background: url('../img/f.png') center center no-repeat;
+    width: 12px;
+    height: 21px;
+}
+
+.social__g {
+    background: url('../img/g.png') center center no-repeat;
+    width: 29px;
+    height: 19px;
+}
+
+.info {
+    display: inline-block;
+}
+
+.info__address, .info__phone {
+    font-size: 13px;
+    font-family: Ubuntu;
+    color: #fff;
+    opacity: 0.4;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+.info__address {
+    padding-right: 21px;
+}
+.info span {
+    display: inline-block;
+    width: 1px;
+    height: 41px;
+    border-right: 1px solid #9667aa;
+    vertical-align: middle;
+    margin-right: 21px;
+}

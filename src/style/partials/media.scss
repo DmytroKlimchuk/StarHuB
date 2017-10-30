@@ -1,0 +1,131 @@
+
+@media (max-width: 880px) {
+    .footer {
+        line-height: 21px;
+    }
+    .social {
+        display: block;
+        text-align: center;
+        border: 0;
+        margin-right: 0;
+    }
+    .social__g {
+        margin-right: 0;
+    }
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info span {display: none;}
+    .info p {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+    }
+    .info__address, .info__phone {
+        font-size: 12px;
+    }
+    .info__address {
+        padding-right: 0px;
+    }
+    .right-side {
+        display: flex;
+        width: 270px;
+    }
+    .parthner {
+        margin: 0 15px;
+    }
+
+    .page h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin: 15px 0 ;
+    }
+
+}
+
+@media (max-width: 786px) {
+    .page h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin: 15px 0 ;
+    }
+}
+
+@media (max-width: 650px) {
+    .page h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin: 15px 0 ;
+    }
+
+    .page p {
+        margin-right: 15px;
+    }
+    .wrapper {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 75px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+    .page {
+        margin-bottom: 30px;
+    }
+    .links {
+        width: 90%;
+        margin: 10px 15px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .footer {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+    .parthner{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .parthner__item {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .notice-wrap {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .notice {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .parthner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .parthner__item {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

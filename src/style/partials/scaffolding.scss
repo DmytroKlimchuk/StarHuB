@@ -1,0 +1,36 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    font-family: Ubuntu;
+}
+
+body::after {
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    content: "";
+    background: linear-gradient(to right, $bg-color-left, $bg-color-right);
+    opacity: 0.93;
+    z-index: -1;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding:  0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

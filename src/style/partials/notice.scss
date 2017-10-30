@@ -1,0 +1,44 @@
+.notice-wrap {
+    padding: 5px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: none;
+}
+
+.notice {
+    color: #fff;
+    font-family: Ubuntu;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.notice b {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 30px;
+}
+
+.notice b::before {
+    content: "";
+    background: url('../img/icon.png') top center no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.notice p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
